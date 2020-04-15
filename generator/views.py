@@ -16,7 +16,7 @@ def testres(request):
 def passwords(request):
 
     passcode=''
-    passcodelen=int(request.GET.get('length',12))
+    passcodelen=int(request.GET.get('length',15))
     charset=list('abcdefghijklmnopqrstuvwxyz')
     if request.GET.get('Uppercase'):
         charset.extend(list('ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
